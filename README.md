@@ -12,7 +12,6 @@ A-Connect , a complete solution for the HMIS to connect with ABDM
 </p>
 </details>
 
-
 <details>
     <summary>Grant that Consent from the ABHA SBX App</summary>
 <p>
@@ -28,8 +27,8 @@ A-Connect , a complete solution for the HMIS to connect with ABDM
     <summary>Callback from ABDM
     </summary>
 <p>
-```url
-{{HIP_URL}}/v0.5/consents/hip/notify
+```url 
+https://gatew/v0.5/consents/hip/notify
 ```
 </p>
 </details>
