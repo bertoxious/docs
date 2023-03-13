@@ -29,7 +29,7 @@ A-Connect , a complete solution for the HMIS to connect with ABDM
 <p>
     
 ```url 
-https://gatew/v0.5/consents/hip/notify
+{{HIP_URL}}/v0.5/consents/hip/notify
 ```
 </p>
 </details>
