@@ -15,7 +15,7 @@ A-Connect , a complete solution for the HMIS to connect with ABDM
 <details>
     <summary>Grant that Consent from the ABHA SBX App</summary>
 <p>
-   [ <img src="[img_girl.jpg](https://drive.google.com/file/d/1VRsTFEZTehre-rDJSEJadWrc7JqDIKZI/view?usp=sharing)" alt="Girl in a jacket" width="500" height="600">](https://drive.google.com/file/d/1VRsTFEZTehre-rDJSEJadWrc7JqDIKZI/view?usp=sharing)
+    ![](https://drive.google.com/file/d/1VRsTFEZTehre-rDJSEJadWrc7JqDIKZI/view?usp=sharing)
 </p>
 </details>
 
