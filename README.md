@@ -102,6 +102,7 @@ The data push url will be the url obtained in the v0.5/health-information/hip/re
 <details>
     <summary>A consent Request will be Generated From the Tracelyfe HIU by making a consent-requests/init call to ABDM</summary>
 <p>
+    
 ```url
 https://dev.abdm.gov.in/gateway/v0.5/consent-requests/init
 ```
@@ -166,8 +167,8 @@ Here is the payload for this
 <details>
     <summary>Now on the ABHA SBX app we can see that consent and Grant that consent</summary>
 <p>
-<img src="photo_2023-03-13_12-28-28.jpg" alt="MarineGEO circle logo" style="height: 100%; width:100%;"/>
-<img src="photo_2023-03-13_12-28-24.jpg" alt="MarineGEO circle logo" style="height: 100%; width:100%;"/>
+<img src="photo_2023-03-13_12-28-28.jpg" alt="MarineGEO circle logo" style="height: 50%; width:50%;"/>
+<img src="photo_2023-03-13_12-28-24.jpg" alt="MarineGEO circle logo" style="height: 50%; width:50%;"/>
 </p>
 </details>
 <details>
@@ -190,6 +191,7 @@ Here is the payload for this
 <details>
     <summary>Now in order to obtain the data we need to make a health information cm request to the abdm with our data push url</summary>
 <p>
+    
 ```url
 https://dev.abdm.gov.in/gateway/v0.5/health-information/cm/request
 ```
