@@ -21,18 +21,12 @@ A-Connect , a complete solution for the HMIS to connect with ABDM
     <img src="photo_2023-03-13_12-08-55.jpg" alt="MarineGEO circle logo" style="height: 50%; width:50%;">
 </p>
 </details>
-
-    
-```url 
-{{HIP_URL}}/v0.5/consents/hip/notify
-```
-</p>
-</details>
 <details>
     <summary>ABDM will make a notify call to the HIP</summary>
 <p>
+    
 ```url
-{{HIP_URL}}/v0.5/health-information/hip/request
+{{HIP_URL}}/v0.5/consents/hip/notify
 ```
 </p>
 </details>
