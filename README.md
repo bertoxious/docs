@@ -10,7 +10,7 @@ A-Connect , a complete solution for the HMIS to connect with ABDM
     <summary>Create consent from NDHM HIU web console</summary>
 <p>
     
-![alt text](https://drive.google.com/file/d/1VRsTFEZTehre-rDJSEJadWrc7JqDIKZI/view?usp=sharing "Creating consent")
+!(Screenshot 2023-03-11 at 2.44.02 PM.png)
 </p>
 </details>
 
