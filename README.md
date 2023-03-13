@@ -9,27 +9,19 @@ A-Connect , a complete solution for the HMIS to connect with ABDM
 <details>
     <summary>Create consent from NDHM HIU web console</summary>
 <p>
-    
-<img src="Screenshot 2023-03-11 at 2.44.02 PM.png" alt="MarineGEO circle logo" style="height: 100%; width:100%;"/>
+    <img src="Screenshot 2023-03-13 at 11.26.38 AM.png" alt="MarineGEO circle logo" style="height: 100%; width:100%;">
 </p>
 </details>
 
 <details>
     <summary>Grant that Consent from the ABHA SBX App</summary>
 <p>
-    <img src="Screenshot 2023-03-13 at 11.26.38 AM.png" alt="MarineGEO circle logo" style="height: 100%; width:100%;">
+    <img src="photo_2023-03-13_12-09-00.jpg" alt="MarineGEO circle logo" style="height: 100%; width:100%;">
+    <img src="photo_2023-03-13_12-08-58.jpg" alt="MarineGEO circle logo" style="height: 100%; width:100%;">
+    <img src="photo_2023-03-13_12-08-55.jpg" alt="MarineGEO circle logo" style="height: 100%; width:100%;">
 </p>
 </details>
 
-<details>
-    <summary>Create consent from NDHM HIU web console</summary>
-<p>
-</p>
-</details>
-<details>
-    <summary>Callback from ABDM
-    </summary>
-<p>
     
 ```url 
 {{HIP_URL}}/v0.5/consents/hip/notify
@@ -72,6 +64,7 @@ The data push url will be the url obtained in the v0.5/health-information/hip/re
 <details>
     <summary>After successful data transfer we can see the data on the NDHM HIU web console</summary>
 <p>
+<img src="Screenshot 2023-03-11 at 2.44.02 PM.png" alt="MarineGEO circle logo" style="height: 100%; width:100%;"/>
 </p>
 </details>
 
