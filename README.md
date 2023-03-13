@@ -15,6 +15,8 @@ A-Connect , a complete solution for the HMIS to connect with ABDM
 <details>
     <summary>Grant that Consent from the ABHA SBX App</summary>
 <p>
+
+![Creating consent through the NDHM HIU](https://drive.google.com/file/d/1VRsTFEZTehre-rDJSEJadWrc7JqDIKZI/view?usp=sharing "Creating consent through NDHM Web Console")
 </p>
 </details>
 
