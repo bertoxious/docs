@@ -186,7 +186,7 @@ Here is the payload for this
 
 ```url
 {{HIP_URL}}/v0.5/consents/hip/notify
-``
+```
 ```url
 {{HIU_URL}}/v0.5/consents/hiu/notify
 ```
