@@ -10,7 +10,7 @@ A-Connect , a complete solution for the HMIS to connect with ABDM
     <summary>Create consent from NDHM HIU web console</summary>
 <p>
     
-!(Screenshot 2023-03-11 at 2.44.02 PM.png)
+<img src="Screenshot 2023-03-11 at 2.44.02 PM.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
 </p>
 </details>
 
