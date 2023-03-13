@@ -16,15 +16,23 @@ A-Connect , a complete solution for the HMIS to connect with ABDM
 <details>
     <summary>Grant that Consent from the ABHA SBX App</summary>
 <p>
-    <img src="photo_2023-03-13_12-09-00.jpg" alt="MarineGEO circle logo" style="height: 100%; width:100%;">
-    <img src="photo_2023-03-13_12-08-58.jpg" alt="MarineGEO circle logo" style="height: 100%; width:100%;">
-    <img src="photo_2023-03-13_12-08-55.jpg" alt="MarineGEO circle logo" style="height: 100%; width:100%;">
+    <img src="photo_2023-03-13_12-09-00.jpg" alt="MarineGEO circle logo" style="height: 50%; width:50%;">
+    <img src="photo_2023-03-13_12-08-58.jpg" alt="MarineGEO circle logo" style="height: 50%; width:50%;">
+    <img src="photo_2023-03-13_12-08-55.jpg" alt="MarineGEO circle logo" style="height: 50%; width:50%;">
 </p>
 </details>
 
     
 ```url 
 {{HIP_URL}}/v0.5/consents/hip/notify
+```
+</p>
+</details>
+<details>
+    <summary>ABDM will make a notify call to the HIP</summary>
+<p>
+```url
+{{HIP_URL}}/v0.5/health-information/hip/request
 ```
 </p>
 </details>
