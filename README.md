@@ -4,7 +4,7 @@
 A-Connect , a complete solution for the HMIS to connect with ABDM
 
 
-**_Using NDHM HIU and Tracelyfe as an HIP_**
+## Using NDHM HIU and Tracelyfe as an HIP
 
 <details>
     <summary>Create consent from NDHM HIU web console</summary>
@@ -95,5 +95,172 @@ The data push url will be the url obtained in the v0.5/health-information/hip/re
 <img src="Screenshot 2023-03-11 at 2.44.02 PM.png" alt="MarineGEO circle logo" style="height: 100%; width:100%;"/>
 </p>
 </details>
+
+
+## Using Tracelyfe as HIU and HIP
+
+<details>
+    <summary>A consent Request will be Generated From the Tracelyfe HIU by making a consent-requests/init call to ABDM</summary>
+<p>
+```url
+https://dev.abdm.gov.in/gateway/v0.5/consent-requests/init
+```
+
+Here is the payload for this
+```json 
+{
+  "requestId": "{{$guid}}",
+  "timestamp": "{{timestamp}}",
+  "consent": {
+    "purpose": {
+      "text": "Jamaila Dede Na",
+      "code": "CAREMGT",
+      "refUri": "string"
+    },
+    "patient": {
+      "id": "abhashish@sbx"
+    },
+    "hip": {
+      "id": "trace_0011"
+    },
+    "careContexts": [
+      {
+        "patientReference": "Patient/322",
+        "careContextReference": "Observation/789"
+      }
+    ],
+    "hiu": {
+      "id": "trace_0011"
+    },
+    "requester": {
+      "name": "Dr. Ashish",
+      "identifier": {
+        "type": "REGNO",
+        "value": "MH1001",
+        "system": "https://www.mciindia.org"
+      }
+    },
+    "hiTypes": [
+      "OPConsultation"
+    ],
+    "permission": {
+      "accessMode": "VIEW",
+      "dateRange": {
+        "from": "",
+        "to": "2023-03-11T10:08:21.338Z"
+      },
+      "dataEraseAt": "2023-03-25T10:08:21.338Z",
+      "frequency": {
+        "unit": "HOUR",
+        "value": 1,
+        "repeats": 0
+      }
+    }
+  }
+}
+```
+</p>
+</details>
+
+</details>
+<details>
+    <summary>Now on the ABHA SBX app we can see that consent and Grant that consent</summary>
+<p>
+<img src="photo_2023-03-13_12-28-28.jpg" alt="MarineGEO circle logo" style="height: 100%; width:100%;"/>
+<img src="photo_2023-03-13_12-28-24.jpg" alt="MarineGEO circle logo" style="height: 100%; width:100%;"/>
+</p>
+</details>
+<details>
+    <summary>Now ABDM will respond to us with a consent Id in consent-request on-init with a consent ID</summary>
+<p>
+
+```url
+{{HIP_URL}}/v0.5/consent-requests/on-init
+```
+</p>
+</details>
+<details>
+    <summary>ABDM will respond to hip/notify and hiu/notify to the respective HIU and HIP</summary>
+<p>
+{{HIP_URL}}/v0.5/consents/hip/notify
+{{HIU_URL}}/v0.5/consents/hiu/notify
+</p>
+</details>
+
+<details>
+    <summary>Now in order to obtain the data we need to make a health information cm request to the abdm with our data push url</summary>
+<p>
+```url
+https://dev.abdm.gov.in/gateway/v0.5/health-information/cm/request
+```
+
+Here is the sample json payload
+```json
+{
+    "requestId": "{{$guid}}",
+    "timestamp": "{{timestamp}}",
+    "hiRequest": {
+        "consent": {
+            "id": "e8180e43-b9ef-4fe0-a8f4-42fb27ad00f1"
+        },
+        "dateRange": {
+            "from": "2023-02-10T10:32:53.617114",
+            "to": "2023-03-24T10:32:53.617155"
+        },
+        "dataPushUrl": "https://fbd4-2401-4900-1f32-d9c-25db-72dd-10b5-7521.in.ngrok.io/api/m2/backend/data/push",
+        "keyMaterial": {
+            "cryptoAlg": "ECDH",
+            "curve": "Curve25519",
+            "dhPublicKey": {
+                "expiry": "2023-03-25T10:08:21.338",
+                "parameters": "Curve25519/32byte random key",
+                "keyValue": "BAd+eeWKH1E+U8E2cEh5ob1jItFDVnnyI0E5KkbVFZWWIswaLNCbED7lrR6NFI4KArHugSsesjTJvy0fA+UBfd8="
+            },
+            "nonce": "rEIPO/Fsutq8LWmsI5Ll7V26bxkCLlVWqK6n7A7Heug="
+        }
+    }
+}
+```
+</p>
+</details>
+
+<details>
+    <summary>Once the data came to the data push url and we decrypted that data we need to notify ABDM about the same</summary>
+<p>
+
+```url
+https://dev.abdm.gov.in/gateway/v0.5/health-information/notify
+```
+
+Here is the sample json payload
+```json
+{
+  "requestId": "{{$guid}}",
+  "timestamp": "{{timestamp}}",
+  "notification": {
+    "consentId": "a1651840-f229-46de-b935-9943d64a63bd",
+    "transactionId": "f9f3e59f-bc99-4ef9-a46d-e27add19f38f",
+    "doneAt": "{{timestamp}}",
+    "notifier": {
+      "type": "HIU",
+      "id": "trace_0011"
+    },
+    "statusNotification": {
+      "sessionStatus": "TRANSFERRED",
+      "hipId": "testHip",
+      "statusResponses": [
+        {
+          "careContextReference": "string",
+          "hiStatus": "OK",
+          "description": "string"
+        }
+      ]
+    }
+  }
+}
+```
+</p>
+</details>
+
 
 
