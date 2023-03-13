@@ -183,8 +183,13 @@ Here is the payload for this
 <details>
     <summary>ABDM will respond to hip/notify and hiu/notify to the respective HIU and HIP</summary>
 <p>
-{{HIP_URL}}/v0.5/consents/hip/notify <br>
-{{HIU_URL}}/v0.5/consents/hiu/notify <br>
+
+```url
+{{HIP_URL}}/v0.5/consents/hip/notify
+``
+```url
+{{HIU_URL}}/v0.5/consents/hiu/notify
+```
 </p>
 </details>
 
