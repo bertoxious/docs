@@ -86,7 +86,7 @@ The data push url will be the url obtained in the v0.5/health-information/hip/re
         "nonce": "njwpRVC7nEvLDeXqRX9N3xt8jDk6wc24ZakK+zvpvbo="
     }
 }
-    ```
+```
 </p>
 </details>
 <details>
